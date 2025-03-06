@@ -1,5 +1,9 @@
 function post (){
-  console.log("非同期投稿を実装");
+  const form = document.getElementById("form");
+  form.addEventListener("submit", (e) => {
+    console.log(document.getElementById("form"));
+    e.preventDefault();
+  });
 };
 
 window.addEventListener('turbo:load', post);
