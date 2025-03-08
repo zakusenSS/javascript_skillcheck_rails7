@@ -1,7 +1,9 @@
 function count (){
   const articleText = document.getElementById("article_text");
   articleText.addEventListener("keyup", () => {
-    console.log(articleText.value.length);
+    const countVal = articleText.value.length;
+    const charNum =document.getElementById("char_num");
+    charNum.innerHTML = `${countVal}文字`;
   });
 };
 
