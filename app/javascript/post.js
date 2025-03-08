@@ -20,6 +20,9 @@ function post (){
         </div>`;
       contentsArea.insertAdjacentHTML("afterbegin", HTML);
       articleText.value = "";
+
+      const charNum = document.getElementById("char_num");
+      charNum.innerHTML = "0文字";
     };
     e.preventDefault();
   });
